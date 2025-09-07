@@ -11,3 +11,17 @@ ca.pem
 .venv
 
 .ruff_cache
+
+react_frontend/
+
+.pytest_cache/
+
+.vscode/
+
+models/
+
+csv_generator.py
+
+*.csv
+
+QWEN.md

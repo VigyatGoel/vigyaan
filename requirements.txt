@@ -9,3 +9,4 @@ asyncpg
 uvicorn[standard]
 streamlit
 plotly
+pytest
