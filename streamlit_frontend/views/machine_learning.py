@@ -147,9 +147,9 @@ def display_machine_learning(api_client):
     if st.session_state.get("training_completed") and st.session_state.get(
         "training_results"
     ):
-        st.info(
-            f"Showing previously trained models for target: {st.session_state.get('selected_target', '(unknown)')}"
-        )
+        # st.info(
+        #     f"Showing previously trained models for target: {st.session_state.get('selected_target', '(unknown)')}"
+        # )
         render_training_results(st.session_state.training_results)
 
     if not st.session_state.get("training_completed"):

@@ -1,7 +1,7 @@
 [project]
-name = "machine-learning-platform"
+name = "Vigyaan"
 version = "0.1.0"
-description = "Add your description here"
+description = "Vigyaan is an all-in-one application for rapid exploratory data analysis, interactive visualizations, and baseline machine learning model training"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
