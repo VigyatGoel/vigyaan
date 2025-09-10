@@ -39,13 +39,23 @@ Vigyaan is an all-in-one application for rapid exploratory data analysis, intera
 ## 📂 Project Structure (key paths)
 
 ```
-streamlit_frontend/app.py        # Streamlit UI (tabs, model download, charts)
-src/api/main.py                  # FastAPI app + routers registration
-src/api/routes/                  # API endpoints (csv_file, data_summary, data_science, machine_learning)
-src/machinelearning/             # Training & prediction pipeline code
-models/                          # Persisted trained model and preprocessing artifacts
-run_all.sh                       # Supervisor script launching both services
-Dockerfile                      # Single-image container build
+streamlit_frontend/
+	app.py                 # Orchestrates layout, sidebar, and tabs
+	api_client.py          # HTTP client for backend endpoints
+	session_state.py       # Centralized Streamlit session state setup
+	config.py              # Streamlit page config & constants
+	views/
+		overview.py          # Data overview (preview, file info, describe)
+		visualizations.py    # All charts (scatter, hist, line, corr, box, pair, area)
+		analysis.py          # Data analysis (missing, types, feature analysis)
+		machine_learning.py  # Train, metrics, downloads, usage snippet
+
+src/api/main.py          # FastAPI app + routers registration
+src/api/routes/          # API endpoints (csv_file, data_summary, data_science, machine_learning)
+src/machinelearning/     # Training & prediction pipeline code
+models/                  # Persisted trained model and preprocessing artifacts
+run_all.sh               # Supervisor script launching both services
+Dockerfile               # Single-image container build
 requirements.txt / pyproject.toml
 ```
 

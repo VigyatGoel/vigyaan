@@ -17,7 +17,6 @@ from sklearn.svm import SVC
 
 
 def train_models(X, y, save_path: str = "models/") -> Dict[str, Dict[str, float]]:
-
     """_summary_
 
     Returns:

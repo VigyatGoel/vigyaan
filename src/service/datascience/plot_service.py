@@ -29,7 +29,9 @@ class PlotService:
 
     # --- Helpers -----------------------------------------------------------------
     @staticmethod
-    def _df_to_json_lists(df: pd.DataFrame, ndigits: int | None = None, reset_index: bool = False) -> dict:
+    def _df_to_json_lists(
+        df: pd.DataFrame, ndigits: int | None = None, reset_index: bool = False
+    ) -> dict:
         if ndigits is not None:
             df = df.round(ndigits)
         if reset_index:

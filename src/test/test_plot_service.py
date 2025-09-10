@@ -26,6 +26,7 @@ def test_scatter_returns_json_safe_values():
     )
     csv_path = make_temp_csv(df)
     try:
+
         async def run():
             svc = PlotService(csv_path)
             data = await svc.get_scatter_plot_data_service("Col_1", "Col_3")
@@ -53,6 +54,7 @@ def test_line_plot_json_safe_and_not_empty_with_numeric_cols():
     )
     csv_path = make_temp_csv(df)
     try:
+
         async def run():
             svc = PlotService(csv_path)
             data = await svc.get_line_plot_data_service()
@@ -77,6 +79,7 @@ def test_line_plot_no_numeric_columns_raises_422():
     df = pd.DataFrame({"A": ["x", "y", "z"], "B": ["m", "n", "o"]})
     csv_path = make_temp_csv(df)
     try:
+
         async def run():
             svc = PlotService(csv_path)
             with pytest.raises(HTTPException) as exc:
