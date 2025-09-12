@@ -36,7 +36,26 @@ def main():
     api_client = MLPlatformAPI(config.API_BASE_URL)
 
     # Native Streamlit title at top
-    st.title("🤖 Machine Learning & Data Science Platform")
+    # st.title("🤖 Machine Learning & Data Science Platform")
+
+    st.html(
+        """
+        <style>
+        .custom-title {
+            position: absolute;
+            top: -100px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .st-emotion-cache-gquqoo {
+            height: 3rem;
+            min-height: 1rem;
+        }
+        </style>
+        <h1 class="custom-title">🤖 Machine Learning & Data Science Platform</h1>
+        """
+    )
     st.markdown("---")
 
     with st.sidebar:
