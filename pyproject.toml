@@ -3,20 +3,15 @@ name = "Vigyaan"
 version = "0.1.0"
 description = "Vigyaan is an all-in-one application for rapid exploratory data analysis, interactive visualizations, and baseline machine learning model training"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
-    "asyncpg>=0.30.0",
-    "fastapi[standard]>=0.116.1",
-    "matplotlib>=3.10.5",
-    "numpy>=2.3.2",
-    "pandas>=2.3.1",
-    "plotly>=6.3.0",
-    "pytest>=8.4.2",
-    "requests>=2.32.4",
-    "scikit-learn>=1.7.1",
-    "seaborn>=0.13.2",
+    "fastapi[standard]>=0.136.3",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "plotly>=6.7.0",
+    "requests>=2.34.2",
+    "scikit-learn>=1.8.0",
     "slowapi>=0.1.9",
-    "sqlalchemy>=2.0.43",
-    "streamlit>=1.48.1",
+    "streamlit>=1.57.0",
     "watchdog>=6.0.0",
 ]

@@ -1,8 +1,0 @@
-global:
-  scrape_interval: 5s
-
-scrape_configs:
-  - job_name: "fastapi"
-    static_configs:
-      - targets: ["vigyaan-container:8000"]
-    metrics_path: "/metrics"

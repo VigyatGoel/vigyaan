@@ -1,6 +1,5 @@
 import asyncio
 import os
-from concurrent.futures import ThreadPoolExecutor
 
 import pandas as pd
 
@@ -12,7 +11,6 @@ class Plot:
 
         self.file_path = file_path
         self._df = None
-        self.executor = ThreadPoolExecutor(max_workers=4)
 
     async def load_data(self, force_reload=False):
         if self._df is None or force_reload:
